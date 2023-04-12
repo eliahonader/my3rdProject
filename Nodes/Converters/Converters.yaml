@@ -1,2 +1,37 @@
 Name: Converters
 Type: FolderType
+Children:
+- Name: EngineeringUnitConverter1
+  Id: g=e1b2906e716d197e7bdaf1a160307a63
+  Supertype: EUConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: Number
+    ReferenceType: HasSource
+    Value: {"Type":11,"Body":0.0}
+  - Name: RawMin
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 12.0
+  - Name: RawMax
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 34.0
+  - Name: ScaledMin
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 1.0
+  - Name: ScaledMax
+    Type: BaseDataVariableType
+    DataType: Double
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: 3.0
